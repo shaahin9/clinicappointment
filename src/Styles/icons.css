@@ -1,0 +1,40 @@
+i.flag:not(.icon) {
+	display: inline-block;
+	width: 16px;
+	height: 11px;
+	line-height: 11px;
+	vertical-align: baseline;
+	margin: 0 0 0 0.5em;
+	text-decoration: inherit;
+	speak: none;
+	font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+i.flag:not(.icon):before {
+	display: inline-block;
+	content: '';
+	background: url(https://jamhospital.ir/asset/semantic-ui-rtl/themes/default/assets/images/flags.png)
+		no-repeat -108px -1976px;
+	width: 16px;
+	height: 11px;
+}
+
+i.flag.az:before,
+i.flag.azerbaijan:before {
+	background-position: 0 -390px;
+}
+i.flag.ir:before,
+i.flag.iran:before {
+	background-position: -36px -780px;
+}
+i.flag.gb:before,
+i.flag.uk:before,
+i.flag.united.kingdom:before {
+	background-position: -36px -26px;
+}
+i.flag.sa:before,
+i.flag.saudi.arabia:before {
+	background-position: -72px -936px;
+}
