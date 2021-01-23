@@ -21,6 +21,7 @@ const WizardComponent = styled.div`
 		background-color: transparent;
 		outline: none;
 		text-align: center;
+		font-size:14px;
 	}
 
 	.multisteps-form__progress-btn:before {

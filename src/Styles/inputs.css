@@ -244,15 +244,17 @@ input:focus::-moz-placeholder {
 }
 
 .next-step {
+	font-weight: normal;
 	color: #fff;
 	background-color: #f2711c;
-	padding: 1.25rem 1.75rem;
+	padding: 1.1rem 2.75rem;
 }
 
 .prev-step {
-	color: #494b4d;
-	background-color: #d3d7da;
-	padding: 1.25rem 1.75rem;
+    font-weight: normal;
+    background-color: #8c8c8c;
+    color: #fff !important;
+	padding: 1.1rem 4.05rem;
 }
 
 .link-button {
