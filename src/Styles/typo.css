@@ -534,6 +534,9 @@ a {
 	font-weight: bold;
 	position: relative;
 	z-index: 0;
+	font-size: 14px;
+	font-weight: bold;
+
 }
 
 .no-margin {
@@ -711,7 +714,7 @@ a {
 
 .hours .part {
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	margin-bottom: 16px;
 }
 
@@ -730,7 +733,7 @@ a {
 }
 
 .hours .part ul li {
-	flex: 0 0 80px;
+	flex: 0 0 75px;
 	margin: 0 6px;
 }
 
@@ -922,7 +925,8 @@ a {
 	background-color: #207376;
 	text-align: right;
 	line-height: 48px;
-	font-weight: bold;
+	/* font-weight: bold; */
+	font-size: 14px;
 	margin-bottom: 40px;
 	padding: 0 15px;
 	border-radius: 4px;
@@ -1891,4 +1895,10 @@ body::-webkit-scrollbar-track {
 }
 .css-1okebmr-indicatorSeparator{
 	opacity: 0;
+}
+
+
+
+.Calendar__day.-selected, .Calendar__day.-selectedStart, .Calendar__day.-selectedEnd{
+	background-color: #f8991d !important;
 }

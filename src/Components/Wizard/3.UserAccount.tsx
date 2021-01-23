@@ -32,7 +32,7 @@ const UserAccount: React.FC<IProps> = ({ onSubmit, step1, onPrev }: IProps) => {
 							<input
 								className="input"
 								type="text"
-								placeholder="شماره موبایل"
+								placeholder="********091"
 								name="mobile"
 								id="mobile_number"
 								onKeyPress={(event) => {
@@ -48,7 +48,7 @@ const UserAccount: React.FC<IProps> = ({ onSubmit, step1, onPrev }: IProps) => {
 
 						<div className="button_actions">
 							<SubmitButton
-								label="ارسال"
+								label="تایید و ادامه"
 								isValid={!isMobile(mobile)}
 								isSubmitting={isLoading}
 								onClick={async () => {
