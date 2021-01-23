@@ -1,4 +1,4 @@
-import React, { memo, useCallback } from 'react';
+import React, { memo, useCallback ,useEffect,useState} from 'react';
 import { useAxios } from 'Network/Axios';
 import AsyncSelect from 'react-select/async';
 import Select from 'react-select'
@@ -10,6 +10,8 @@ interface IProps {
 	onSubmit: (obj: any) => void;
 }
 type OptionType = { label: string; value: string };
+
+
 
 const doctorDropdown = async () => {
 	const getData = await $GetDoctorDropDown();
@@ -37,6 +39,20 @@ const majorDropdown = async () => {
 };
 
 const SelectDoctor: React.FC<IProps> = ({ onSubmit }: IProps) => {
+
+	// const [DoctorList , setDoctorList]=useState([]);
+
+	const [DoctorList , setDoctorList] = useState([]);
+
+	useEffect(()=>{
+		const data = async () => {
+			const result = await doctorDropdown();
+			setDoctorList(result)
+	   };
+	   data()
+	
+	},[]);
+
 	const [doctorId, setDoctorId] = React.useState<{
 		value: string;
 		label: string;
@@ -88,7 +104,7 @@ const SelectDoctor: React.FC<IProps> = ({ onSubmit }: IProps) => {
 				<div className="col-span-4">
 					<div className="box_search_title">جستجو پزشک</div>
 					<div className="box_search_body">
-						<AsyncSelect
+						<Select
 							isRtl
 							isClearable
 							cacheOptions
@@ -96,7 +112,7 @@ const SelectDoctor: React.FC<IProps> = ({ onSubmit }: IProps) => {
 							isSearchable
 							noOptionsMessage={() => 'موردی یافت نشد'}
 							loadingMessage={() => 'در حال دریافت...'}
-							loadOptions={doctorDropdown}
+							options={DoctorList}
 							defaultOptions
 							// onInputChange={(e) => {
 							// 	if (!e) return;

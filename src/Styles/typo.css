@@ -449,6 +449,7 @@ a {
 	font-weight: normal;
 	transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease,
 		-webkit-box-shadow 0.1s ease;
+		border-bottom: 1px solid #eee;
 }
 
 .menu .item:last-child {
@@ -459,7 +460,7 @@ a {
 .menu .item.active {
 	cursor: pointer;
 	background: rgba(0, 0, 0, 0.03);
-	/* color: #00b5ad; */
+	color: #00b5ad;
 }
 
 .menu .item.active:after {
@@ -1901,4 +1902,7 @@ body::-webkit-scrollbar-track {
 
 .Calendar__day.-selected, .Calendar__day.-selectedStart, .Calendar__day.-selectedEnd{
 	background-color: #f8991d !important;
+}
+.Calendar__day.-selected{
+	border-radius: 0 !important;
 }
