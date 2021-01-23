@@ -98,7 +98,33 @@ const Header: React.FC<IProps> = ({ title }: IProps) => {
 				<a className="main_navbar item" href="https://jamhospital.ir/fa/پزشکان">
 					پزشکان
 				</a>
-				<div className="main_navbar item">بخش‌های درمانی</div>
+				<div className={cx('main_navbar item', { active: state === 3 })}
+					onClick={() => setstate(3)}>بخش‌های درمانی
+					{/* <FontAwesomeIcon className="mr-1" icon={faAngleDown} />
+					{state === 3 && (
+						<div className="ui menu mega__menu">
+							<a href="#" className="item">
+								<img src={process.env.PUBLIC_URL + '/media/menu1.jpg'} alt=""/>
+								<h6>
+								کلینیک‌ها
+								</h6>
+							</a>
+							<a href="#" className="item">
+								<img src={process.env.PUBLIC_URL + '/media/menu1.jpg'} alt=""/>
+								<h6>
+								کلینیک‌ها
+								</h6>
+							</a>
+							<a href="#" className="item">
+								<img src={process.env.PUBLIC_URL + '/media/menu1.jpg'} alt=""/>
+								<h6>
+								کلینیک‌ها
+								</h6>
+							</a>
+						</div>
+					)} */}
+				
+				</div>
 				<div
 					className={cx('main_navbar item', { active: state === 1 })}
 					onClick={() => setstate(1)}

@@ -92,7 +92,7 @@ const SelectDoctor: React.FC<IProps> = ({ onSubmit }: IProps) => {
 							isRtl
 							isClearable
 							cacheOptions
-							placeholder="انتخاب..."
+							placeholder="نام پزشک را جستجو کنید"
 							isSearchable
 							noOptionsMessage={() => 'موردی یافت نشد'}
 							loadingMessage={() => 'در حال دریافت...'}
@@ -121,7 +121,7 @@ const SelectDoctor: React.FC<IProps> = ({ onSubmit }: IProps) => {
 							isRtl
 							isClearable
 							cacheOptions
-							placeholder="انتخاب..."
+							placeholder="تخصص مورد نظر را جستجو کنید"
 							isSearchable={false}
 							noOptionsMessage={() => 'موردی یافت نشد'}
 							loadingMessage={() => 'در حال دریافت...'}
