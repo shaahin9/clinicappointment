@@ -1539,6 +1539,10 @@ a {
 	/* flex: 1; */
 	padding-left: 1rem;
 }
+.lang_selector .header{
+	font-weight: bold;
+	color: #191b1d;
+}
 .lang_selector a{
 	font-size: 12px;
 	margin-right: 10px;
