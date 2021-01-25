@@ -152,7 +152,11 @@ const Schedule = () => {
 										src={doctor.DoctorAvatar}
 										alt={`${doctor.DoctorFirstName} ${doctor.DoctorLastName}`}
 									/>
-									<h2 className="name">{`${doctor.DoctorFirstName} ${doctor.DoctorLastName}`}</h2>
+									<div className="name">
+									<h2  >{`${doctor.DoctorFirstName} ${doctor.DoctorLastName}`}</h2>
+									<p>{doctor.SpecialityTitle}</p>
+									</div>
+									
 								</div>
 								<div className="part2">
 									{makeTimeIntervals(doctor.From, doctor.To, 30)?.map((t) => (
